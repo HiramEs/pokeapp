@@ -6,5 +6,6 @@ En el primero tienes una lista de pokemones dividida por regiones, donde puedes 
 En el segundo boton puedes descargar los equipos pokemon de cualquier persona! Solo necesitas ingresar el token que se encuentra al lado del nombre de todos los equipos y listo!
 En tu pantalla de equipos puedes modificar o eliminar estos equipos dandole click a la carta del equipo, o si lo deseas darle click a cualquier pokemon que forme parte de
 alguno de tus equipos y ver su informacion!
+Descarga mi equipo de legendarios favoritos: 675798
 
 CONFIGURADO SOLO PARA ANDROID
