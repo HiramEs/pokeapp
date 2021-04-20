@@ -39,7 +39,6 @@ const listaEquipos = () => {
             const response = await firestore().collection("Equipos").get().then(querySnapshot => {
                 querySnapshot.forEach(documentSnap => {
                     if (documentSnap.data().NombreEquipo === item.NombreEquipo && documentSnap.data().Entrenador === entrenador) {
-                        // console.log(documentSnap.id);
                         id = documentSnap.id;
                     }
                 });
@@ -131,7 +130,7 @@ const listaEquipos = () => {
                         renderItem={({ item }) => {
                             return (
                                 <TouchableOpacity onPress={() => accionBoton(item)} >
-                                    <EquipoCard pokemones={item.pokemones} NombreEquipo={item.NombreEquipo} onPress={InformacionPokemon} />
+                                    <EquipoCard pokemones={item.pokemones} NombreEquipo={item.NombreEquipo} onPress={InformacionPokemon} Token={item.Token} />
                                 </TouchableOpacity>
                             )
                         }}

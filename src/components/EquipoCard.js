@@ -1,11 +1,11 @@
 import React, {useEffect, useState} from 'react'
 import { View, Text, StyleSheet, FlatList, TouchableOpacity, Image } from 'react-native'
 
-const EquipoCard = ({ pokemones, NombreEquipo, onPress }) => {
+const EquipoCard = ({ pokemones, NombreEquipo, onPress, Token }) => {
 
     return (
         <View style={styles.CardContainer} >
-            <Text style={styles.title}>{NombreEquipo}</Text>
+            <Text style={styles.title}>{NombreEquipo} #{Token}</Text>
             <FlatList
                 data={pokemones}
                 horizontal={true}
